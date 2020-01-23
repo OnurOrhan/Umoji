@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.umoji.umoji">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- <uses-feature android:name="android.hardware.camera2.full" /> -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ll_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Search.WatchStoryActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Auth.SignUpActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Auth.SignInActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Forms.FormActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Home.HomeActivity" />
+        <activity android:name=".Duel.DuelActivity" />
+        <activity
+            android:name=".Share.ShareActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Search.SearchActivity"
+            android:windowSoftInputMode="stateVisible|adjustNothing" />
+        <activity android:name=".Profile.ProfileActivity" />
+        <activity android:name=".Profile.AccountSettingsActivity" />
+        <activity android:name=".Profile.NotificationsActivity" />
+        <activity
+            android:name=".Home.WatchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_watch"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".Home.ReplyActivity" />
+        <activity android:name=".Search.DiscoverActivity" />
+        <activity android:name=".Auth.ChangePasswordActivity" />
+        <activity android:name=".Auth.ResetPasswordActivity" />
+        <activity android:name=".Profile.GalleryActivity" />
+        <activity
+            android:name=".Profile.ShowPhotoActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Chat.ChatListActivity" />
+        <activity android:name=".Chat.ChatActivity" />
+        <activity
+            android:name=".Share.CustomCameraActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Search.FriendListActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Share.StoryActivity" />
+        <activity android:name=".Home.WatchPersonStoryActivity"></activity>
+    </application>
+
+</manifest>
