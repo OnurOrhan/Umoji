@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_bar_height"
+    android:background="@drawable/white_grey_border_top"
+    android:backgroundTint="@color/primary_very_light"
+    android:layout_alignParentBottom="true">
+
+    <ImageView
+        android:id="@+id/bottom_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/bottom_bar_icon_padding"
+        android:layout_marginStart="@dimen/bottom_bar_start_end_margin"
+        android:src="@drawable/ic_home"
+        android:tint="@color/primary"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/bottom_camera"/>
+
+    <ImageView
+        android:id="@+id/bottom_home_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/bottom_bar_icon_padding"
+        android:layout_marginStart="@dimen/bottom_bar_start_end_margin"
+        android:src="@drawable/ic_home"
+        android:tint="@color/secondary"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/bottom_camera"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/bottom_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/bottom_bar_icon_padding"
+        android:src="@drawable/ic_camera"
+        android:tint="@color/primary"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/bottom_camera_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/bottom_bar_icon_padding"
+        android:src="@drawable/ic_ll_white"
+        android:tint="@color/secondary"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/bottom_discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/bottom_bar_icon_padding"
+        android:layout_marginEnd="@dimen/bottom_bar_start_end_margin"
+        android:src="@drawable/ic_discover"
+        android:tint="@color/primary"
+        android:layout_toEndOf="@+id/bottom_camera"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/bottom_discover_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/bottom_bar_icon_padding"
+        android:layout_marginEnd="@dimen/bottom_bar_start_end_margin"
+        android:src="@drawable/ic_discover"
+        android:tint="@color/secondary"
+        android:layout_toEndOf="@+id/bottom_camera"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

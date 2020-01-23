@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorDark">@color/purple</color>
+    <color name="colorLight">@color/yellow</color>
+
+    <color name="progressBarColor">@color/primary</color>
+
+    <color name="primary">#FC3B3B</color>
+
+    <color name="primary_old">#FF9100</color>
+    <color name="primary_light">#F3BF7E</color>
+    <color name="primary_very_light">#FBF9F5</color>
+    <color name="primary_dark">#E98A15</color>
+
+    <color name="primary_unknown">#F89028</color>
+    <color name="primary_yunus">#F8B328</color>
+
+    <color name="secondary">#28BFF8</color>
+    <color name="secondary_variant">#289EF8</color>
+    <color name="light_orange">#FFE6C5</color>
+
+    <color name="transparent_primary">#40F89028</color>
+    <color name="transparent_primary_variant">#40F8B328</color>
+    <color name="transparent_secondary">#4028BFF8</color>
+    <color name="transparent_secondary_variant">#40289EF8</color>
+    <color name="transparent_light_orange">#A0FFE6C5</color>
+
+    <color name="transparent_black">#404E4E4E</color>
+    <color name="transparent_white">#40FFFFFF</color>
+
+    <color name="grey_yunus">#AFAFAF</color>
+    <color name="dark_grey">#4e4e4e</color>
+    <color name="med_grey">#A0A0A0</color>
+    <color name="light_grey">#E8E8E8</color>
+    <color name="grey">#BFBFBF</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="turquoise_old">#008CBA</color>
+    <color name="turquoise_ugur">#A4D5D9</color>
+    <color name="turquoise">#3bd6c6</color>
+    <color name="link_blue">#005ce6</color>
+    <color name="button_blue">#06c</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="purple">#3d003b</color>
+    <color name="yellow">#c5df02</color>
+
+</resources>

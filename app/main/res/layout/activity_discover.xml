@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Search.DiscoverActivity">
+
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:id="@+id/discover_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/white_grey_border_bottom">
+
+        <ImageView
+            android:id="@+id/discover_back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_backarrow_black"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+
+        <RelativeLayout
+            android:id="@+id/discover_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:layout_toEndOf="@+id/discover_back_btn"
+            android:background="@drawable/grey_border_round">
+
+            <ImageView
+                android:id="@+id/discover_search_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_search"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/discover_middle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/discover_top_layout"
+        android:layout_above="@+id/discover_bottom_layout"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/discover_tags_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Trending Umojis"
+            android:textSize="16sp"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:background="@drawable/white_grey_border_bottom"/>
+
+        <GridView
+            android:id="@+id/discover_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:verticalSpacing="1.5dp"
+            android:horizontalSpacing="1.5dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <!-- Bottom Bar -->
+    <RelativeLayout
+        android:id="@+id/discover_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/snippet_bottom_navigation_bar"/>
+    </RelativeLayout>
+
+</RelativeLayout>

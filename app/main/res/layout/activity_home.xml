@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.HomeActivity">
+
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:id="@+id/home_relLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:layout_alignParentTop="true">
+
+        <include layout="@layout/snippet_top_toolbar"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_chipmunk"
+            android:padding="2dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <!-- Middle Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mid_layout"
+        android:layout_below="@+id/home_relLayoutTop"
+        android:layout_marginBottom="50dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_stories_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/feedListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/home_stories_view"/>
+
+    </RelativeLayout>
+
+    <!-- Bottom Bar -->
+    <RelativeLayout
+        android:id="@+id/relLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/snippet_bottom_navigation_bar"/>
+    </RelativeLayout>
+
+</RelativeLayout>

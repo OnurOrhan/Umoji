@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Search.FriendListActivity">
+
+    <RelativeLayout
+        android:id="@+id/friend_list_page_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/friend_list_bottom_layout">
+
+        <!-- Top Bar -->
+        <RelativeLayout
+            android:id="@+id/friend_list_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_height"
+            android:layout_alignParentTop="true">
+
+            <include layout="@layout/snippet_top_toolbar"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/friend_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/friend_list_top_layout">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+    <!-- Bottom Bar -->
+    <RelativeLayout
+        android:id="@+id/friend_list_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/snippet_bottom_navigation_bar"/>
+    </RelativeLayout>
+
+</RelativeLayout>

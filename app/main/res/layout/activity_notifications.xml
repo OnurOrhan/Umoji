@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/notifications_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/notifications_bottom_layout">
+
+        <!-- Top Bar -->
+        <RelativeLayout
+            android:id="@+id/notifications_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_height"
+            android:layout_alignParentTop="true">
+
+            <include layout="@layout/snippet_top_toolbar"/>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/notification_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications_top_layout">
+
+        </ListView>
+    </RelativeLayout>
+
+    <!-- Bottom Bar -->
+    <RelativeLayout
+        android:id="@+id/notifications_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/snippet_bottom_navigation_bar"/>
+    </RelativeLayout>
+
+</RelativeLayout>

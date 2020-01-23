@@ -1,0 +1,82 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/snippet_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_borderless_height"
+        android:background="@color/primary_very_light">
+
+        <ImageView
+            android:id="@+id/top_bar_back_btn"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:padding="@dimen/top_bar_icon_padding"
+            android:layout_marginStart="@dimen/top_bar_start_end_margin"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_backarrow_black"/>
+
+        <ImageView
+            android:id="@+id/top_bar_notifications_btn"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:padding="@dimen/top_bar_icon_padding"
+            android:layout_marginStart="@dimen/top_bar_icon_separation_margin"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/top_bar_back_btn"
+            android:src="@drawable/ic_bell"
+            android:tint="@color/primary"/>
+
+        <ImageView
+            android:id="@+id/top_bar_notifications_bubble"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignEnd="@id/top_bar_notifications_btn"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_notification_count"
+            android:tint="#c00"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/top_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/top_bar_messages_btn"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:padding="@dimen/top_bar_icon_padding"
+            android:layout_marginEnd="@dimen/top_bar_icon_separation_margin"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/top_bar_profile_btn"
+            android:src="@drawable/ic_message"
+            android:tint="@color/primary"/>
+
+        <ImageView
+            android:id="@+id/top_bar_profile_btn"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:padding="@dimen/top_bar_icon_padding"
+            android:layout_marginEnd="@dimen/top_bar_start_end_margin"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_profile"
+            android:tint="@color/primary"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/primary_light"
+        android:layout_below="@id/snippet_top_layout"/>
+</merge>
