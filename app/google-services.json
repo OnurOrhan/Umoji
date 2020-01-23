@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "125992853882",
+    "firebase_url": "https://duellange-3a461.firebaseio.com",
+    "project_id": "duellange-3a461",
+    "storage_bucket": "duellange-3a461.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125992853882:android:4057b8351c2a4ec3",
+        "android_client_info": {
+          "package_name": "com.umoji.umoji"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125992853882-6dfksb7kpaa66a7um0gsudspl8eu346l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN0AzAM5c699B-Se4Gn6qDdBstjAx5dU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125992853882-6dfksb7kpaa66a7um0gsudspl8eu346l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "125992853882-e0bdki38cdnrrn106ck91h40o7ndvr81.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Duellange.Duellange"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
